@@ -33,3 +33,6 @@
 
 - After it is installed we will create a password for the administrator and login.
 - To create a smoother experience we are going to install guest additions. 
+
+![Screenshot 2024-08-27 123844](https://github.com/user-attachments/assets/910dca2d-0499-49e6-8d3b-3b8155c36493)
+![VirtualBoxVM_ODGv2xtMyf](https://github.com/user-attachments/assets/c95c6b31-42ff-46b0-9e2b-6f00cbba10b1)
