@@ -17,8 +17,15 @@
 # 
 ![chrome_sxMh7h1LvF](https://github.com/user-attachments/assets/f656316e-bd33-4764-89f0-59756805c959)
 #
-- Next, we are going to set up a virtual machine running with the Windows Server 2019 ISO. This will serve as our domain controller. 
+- Next, we are going to set up a virtual machine. This will serve as our domain controller. 
 - I went ahead and set the machine to have 2GB of RAM, 4 processors, and enabled bidirectional drag and drop features. 
 - Since this is the domain controller, we need two NICs, so we also need to make sure to enable a second network adapter.
 - NIC 1 is going to be running NAT and is for the domain controller to access the internet through my home internet.
-- NIC 2 is for an internal network and is used to create a closed network environment in which the domain controller can manage clients without exposure to the external internet. ![VirtualBox_kzbkJemOrD](https://github.com/user-attachments/assets/e4da3d89-ed9a-4a0d-802f-f8fc45885b51)
+- NIC 2 is for an internal network and is used to create a closed network environment in which the domain controller can manage clients without exposure to the external internet.
+
+![VirtualBox_kzbkJemOrD](https://github.com/user-attachments/assets/e4da3d89-ed9a-4a0d-802f-f8fc45885b51)
+#
+- Next, we need to mount the Windows Server ISO.
+
+
+![VirtualBoxVM_iJteGHcb6z](https://github.com/user-attachments/assets/88edf879-a999-4613-a5a2-b385c1d976b1)
