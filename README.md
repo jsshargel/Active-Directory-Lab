@@ -8,8 +8,9 @@
 - Server 2019
 # Configuration Steps
 - The first step is to download VirtualBox along with the extension pack.
+  
+<img src="https://github.com/user-attachments/assets/7fc0fc73-0eb5-4858-a631-55b1c4cbee2d" alt="VirtualBox Download" width="600" style="float: left; margin-right: 10px;">
 
-![chrome_I5lKivZDH1](https://github.com/user-attachments/assets/7fc0fc73-0eb5-4858-a631-55b1c4cbee2d)
 # 
 - Next, we need to download a Windows 10 ISO and a Windows Server 2019 ISO
 
