@@ -29,3 +29,7 @@
 
 
 ![VirtualBoxVM_iJteGHcb6z](https://github.com/user-attachments/assets/88edf879-a999-4613-a5a2-b385c1d976b1)
+#
+
+- After it is installed we will create a password for the administrator and login.
+- To create a smoother experience we are going to install guest additions. 
