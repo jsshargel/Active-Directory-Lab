@@ -14,9 +14,12 @@
 # 
 - Next, we need to download a Windows 10 ISO and a Windows Server 2019 ISO
 
-![chrome_dm1pkFC6TC](https://github.com/user-attachments/assets/c5679b4d-10c1-4a6f-9c4c-de364d661228)
+<img src="https://github.com/user-attachments/assets/c5679b4d-10c1-4a6f-9c4c-de364d661228" alt="Windows 10 ISO" width="600" style="float: left; margin-right: 10px;">
+
 # 
-![chrome_sxMh7h1LvF](https://github.com/user-attachments/assets/f656316e-bd33-4764-89f0-59756805c959)
+
+<img src="https://github.com/user-attachments/assets/f656316e-bd33-4764-89f0-59756805c959" alt="Windows Server 2019 ISO" width="600" style="float: left; margin-right: 10px;">
+
 #
 - Next, we are going to set up a virtual machine. This will serve as our domain controller. 
 - I went ahead and set the machine to have 2GB of RAM, 4 processors, and enabled bidirectional drag and drop features. 
@@ -24,16 +27,20 @@
 - NIC 1 is going to be running NAT and is for the domain controller to access the internet through my home internet.
 - NIC 2 is for an internal network and is used to create a closed network environment in which the domain controller can manage clients without exposure to the external internet.
 
-![VirtualBox_kzbkJemOrD](https://github.com/user-attachments/assets/e4da3d89-ed9a-4a0d-802f-f8fc45885b51)
+<img src="https://github.com/user-attachments/assets/e4da3d89-ed9a-4a0d-802f-f8fc45885b51" alt="Virtual Machine Settings" width="600" style="float: left; margin-right: 10px;">
+
+
 #
 - Next, we need to mount the Windows Server ISO.
 
 
-![VirtualBoxVM_iJteGHcb6z](https://github.com/user-attachments/assets/88edf879-a999-4613-a5a2-b385c1d976b1)
+<img src="https://github.com/user-attachments/assets/88edf879-a999-4613-a5a2-b385c1d976b1" alt="Mount Windows Server 2019 ISO" width="600" style="float: left; margin-right: 10px;">
+
 #
 
-- After it is installed we will create a password for the administrator and login.
-- To create a smoother experience we are going to install guest additions. 
+- Next, to create a smoother experience we are going to install guest additions. 
 
-![Screenshot 2024-08-27 123844](https://github.com/user-attachments/assets/910dca2d-0499-49e6-8d3b-3b8155c36493)
-![VirtualBoxVM_ODGv2xtMyf](https://github.com/user-attachments/assets/c95c6b31-42ff-46b0-9e2b-6f00cbba10b1)
+<img src="https://github.com/user-attachments/assets/910dca2d-0499-49e6-8d3b-3b8155c36493" alt="Installing Guest Additions" width="600" style="float: left; margin-right: 10px;">
+
+<img src="https://github.com/user-attachments/assets/c95c6b31-42ff-46b0-9e2b-6f00cbba10b1" alt="Installing Guest Additions" width="600" style="float: left; margin-right: 10px;">
+
