@@ -1,5 +1,7 @@
 # Active-Directory-Lab
-- This tutorial outlines how to set up a lab running active directory. 
+- This tutorial outlines how to set up a lab running active directory.
+- I learned how to build this lab from Josh Madakor.
+- You can check out his github at https://github.com/joshmadakor1 or his youtube channel at https://www.youtube.com/c/JoshMadakor
 # Technologies Used
 - VirtualBox
 - Powershell
