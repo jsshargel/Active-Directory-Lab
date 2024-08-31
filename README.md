@@ -130,7 +130,7 @@
 #
 
 - The next thing we will do is install RAS (remote access server) and NAT (network address translation) on the domain controller. 
-- The reason we need to do this is so that the windows 10 client can be on a private virutal network but still be able to access the interent through the domain controller.
+- The reason we need to do this is so that the windows 10 clients can be on a private virutal network but still be able to access the interent through the domain controller.
 - We need to head on over to roles and features in the server manager dashboard.
 - This will be a similar process as before when we installed active directory domain services.
 - We select the installation type which is once again role or feature based.
@@ -149,7 +149,24 @@
 - Since we previously renamed our NICs we are able to see which public interface we need to select to connect to the internet.
 - We will choose the interface that we named internet and then finish up with that.
 - We can now see that it is configured!
-<img src="https://github.com/user-attachments/assets/c02c8ae3-e2e7-43f3-b8b4-04177b7c6a2d" alt="" width="600" style="float: left; margin-right: 10px;">
+<img src="https://github.com/user-attachments/assets/029a33b8-de42-4066-ac67-336afdae057f" alt="" width="600" style="float: left; margin-right: 10px;">
 
 #
+
+- The next thing we will do is set up a DHCP server on our domain controller.
+- This will allow our windows 10 clients to get an IP address that will allow them to access the internet.
+- We are going to head back over to "Add roles and features" in the server manager.
+- We will go through the same process as before to add the DHCP role.
+<img src="https://github.com/user-attachments/assets/26617980-8129-404f-a062-c4f949fbcf51" alt="" width="600" style="float: left; margin-right: 10px;">
+
+#
+
+- Now we will head over to tools and select "DHCP" to set up our scope.
+- Once set up this will allow the client computers on the network to automatically get an IP address in the range that we configure.
+- 
+
+
+
+
+
 
