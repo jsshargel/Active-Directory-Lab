@@ -120,9 +120,36 @@
 - Now we have our domain admin account!
 <img src="https://github.com/user-attachments/assets/a2fb0b06-00fc-4c1f-af9e-d1cb9813903e" alt="" width="600" style="float: left; margin-right: 10px;">
 
+#
 
+- Now we can log into our own domain admin account.
+- First we will log out and go back to the log in screen.
+- Once there we can go over to "other user" and log in using the credentials we just created
+<img src="https://github.com/user-attachments/assets/38bb152e-12ed-4605-8b4f-1efc2a48d6b6" alt="" width="600" style="float: left; margin-right: 10px;">
 
+#
 
+- The next thing we will do is install RAS (remote access server) and NAT (network address translation) on the domain controller. 
+- The reason we need to do this is so that the windows 10 client can be on a private virutal network but still be able to access the interent through the domain controller.
+- We need to head on over to roles and features in the server manager dashboard.
+- This will be a similar process as before when we installed active directory domain services.
+- We select the installation type which is once again role or feature based.
+- Next, we select the server.
+- After that we will select "Remote Access."
+- We will continue foward until we are at role services. Here we will select routing and then add features. We can see that the DirectAccess and VPN (RAS) has also been checked automatically.
+- Now we will continue foward until we are able to install the role. 
+<img src="https://github.com/user-attachments/assets/82a0f1e4-2ba8-4666-a72b-c72adc0ad46d" alt="" width="600" style="float: left; margin-right: 10px;">
 
+#
 
-  
+- After we have installed the role we need to configure and enable routing and remote access.
+- To do this, we head over to tools at the top of the server manager and select "Routing and Remote Access."
+- Now we right click on the DC and select "Configure and Enable Routing and Remote Access."
+- Then we select NAT.
+- Since we previously renamed our NICs we are able to see which public interface we need to select to connect to the internet.
+- We will choose the interface that we named internet and then finish up with that.
+- We can now see that it is configured!
+<img src="https://github.com/user-attachments/assets/c02c8ae3-e2e7-43f3-b8b4-04177b7c6a2d" alt="" width="600" style="float: left; margin-right: 10px;">
+
+#
+
