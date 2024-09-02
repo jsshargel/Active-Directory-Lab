@@ -163,7 +163,32 @@
 
 - Now we will head over to tools and select "DHCP" to set up our scope.
 - Once set up this will allow the client computers on the network to automatically get an IP address in the range that we configure.
-- 
+- Let's start by right clicking IPv4 and selecting "New Scope."
+- Since this is just a lab we can go ahead and name the scope what our IP range will be which is 172.16.0.100-200
+- The start address would be 172.16.0.100 and the end address 172.16.0.200.
+- The Subnet mask is 255.255.255.0 and the length is 24.
+- We don't have any exclusions.
+- The lease time we can set at 8 days since this is a home lab.
+- Now we want to configure DHCP options for the clients.This will tell the clients which server to use for various things.
+- Since we configured NAT on the domain controller and it has routing configured as well we want to point the clients to the internal NIC of the domain controller so they can access the internet.
+- The clients will use the internal NIC of the domain controller for their default gatway/router. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
