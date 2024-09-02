@@ -171,7 +171,22 @@
 - The lease time we can set at 8 days since this is a home lab.
 - Now we want to configure DHCP options for the clients.This will tell the clients which server to use for various things.
 - Since we configured NAT on the domain controller and it has routing configured as well we want to point the clients to the internal NIC of the domain controller so they can access the internet.
-- The clients will use the internal NIC of the domain controller for their default gatway/router. 
+- For the Router (Default Gateway) we will use the domain controllers IP address which is 172.16.0.1. Make sure to add the address.
+- Since we automatically installed DNS on the domain controller when we installed active directory we will use the domain contoller as our DNS server.
+- We can skip over the WINS Server because we will not be using this.
+- Next, we can complete the setup.
+- After this we need to authorize and refresh the DHCP server.
+- Afterwards we can see that this worked!
+<img src="https://github.com/user-attachments/assets/1878ab40-7434-4e13-9bca-b7ce41e956fd" alt="" width="600" style="float: left; margin-right: 10px;">
+
+#
+
+- The next thing we are going to be doing is running a powershell script to create a bunch of users.
+- I am using the same script that Josh Madakor provides in his tutorial.
+- You can find the script on his youtube video provided at the beginning of this walkthrough.
+- Once we have the file downloaded and saved on the desktop we can extract the contents.
+- In the names file I am going to add my name. 
+- 
 
 
 
