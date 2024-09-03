@@ -8,6 +8,8 @@
 # Operating Systems Used
 - Windows 10
 - Server 2019
+# Visualized Overview
+![Screenshot 2024-09-03 120540](https://github.com/user-attachments/assets/3ebcccbf-7131-45c0-8549-0570320b5632)
 # Configuration Steps
 - The first step is to download VirtualBox along with the extension pack.
   
