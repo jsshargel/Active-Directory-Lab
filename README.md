@@ -186,9 +186,20 @@
 - You can find the script on his youtube video provided at the beginning of this walkthrough.
 - Once we have the file downloaded and saved on the desktop we can extract the contents.
 - In the names file I am going to add my name. 
-- 
+- Now we'll click on Start and open the Windows Powershell drop down menu and run WPS ISE as administrator.  
+- Now we can open the Powershell script we have saved in the folder on our desktop. 
+- If we try to run the script as is we get an error. This is just a security feature so we need to get around this.
+- To do that we enter the command - Set-ExecutionPolicy Unrestricted.
+- After this we will change directories to the AD_PS-Master folder using the cd command.
+- Once there we can search the content using the ls command and we can see that the name.txt file is there.
+<img src="https://github.com/user-attachments/assets/251c0517-2203-4971-a2f6-47af6f882aab" alt="" width="600" style="float: left; margin-right: 10px;">
 
+#
 
+- Alright! Now we can go ahead and run the script.
+- After we run the script we can head over to tools and open Active Directory Users and Computers.
+- Once there we can see that the Users have been created using the script we just ran. 
+<img src="https://github.com/user-attachments/assets/8110df2c-c0a4-44f5-bc13-cc87a6702071" alt="" width="600" style="float: left; margin-right: 10px;">
 
 
 
