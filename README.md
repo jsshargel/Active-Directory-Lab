@@ -201,8 +201,30 @@
 - Once there we can see that the Users have been created using the script we just ran. 
 <img src="https://github.com/user-attachments/assets/8110df2c-c0a4-44f5-bc13-cc87a6702071" alt="" width="600" style="float: left; margin-right: 10px;">
 
+#
 
+- Now we will create the Windwos 10 client.
+- To do that we can head back over to Virtual Box and create a new VM.
+- Lets name it Client1 and select Windows 10 64 Bit.
+- I'm going to give it the same settings as the server except I'll increase the RAM on this one to 4GB. 
+- Also under network we need to select Internal Network.
+<img src="https://github.com/user-attachments/assets/2f8e9bfa-c890-4ce2-accd-de8b9e8c9981" alt="" width="600" style="float: left; margin-right: 10px;">
 
+#
+
+- Ok, now we can find the Windows ISO we downloaded early and mount it.
+- When the setup asks for a Product Key we can just bypass by selecting that we don't have one.
+- We also need to make sure to select Windows 10 Pro because the Home edition can not join the domain.
+- Now we select custom install and go ahead and install.
+- Once it is finished installing it will restart on its own.
+- Once we get to the option to select which type of an account this will be we select personal account.
+- On the next page we want to make sure to select offline account and then limited experience. 
+- Let's set the user name to "user" and skip over the password.
+- Let's skip over everything else.
+- Now that we are finished with that let's make sure that the internet is working on the Windwos 10 VM.
+- To do that we can open the comman line and enter ipconfig
+- Success!
+<img src="https://github.com/user-attachments/assets/e0777a99-b493-4cb2-b696-51d7e733e772" alt="" width="600" style="float: left; margin-right: 10px;">
 
 
 
