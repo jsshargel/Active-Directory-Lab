@@ -226,11 +226,51 @@
 - Success!
 <img src="https://github.com/user-attachments/assets/e0777a99-b493-4cb2-b696-51d7e733e772" alt="" width="600" style="float: left; margin-right: 10px;">
 
+- In order to test if everything is working we can ping google.
+- Because www.google.com resolved we know that the DNS server is working and because we can ping to the internet we know that everything is working correctly. 
+<img src="https://github.com/user-attachments/assets/54c0031a-c609-40a7-9ee3-54c9e3f9263e" alt="" width="600" style="float: left; margin-right: 10px;">
 
+#
 
+- Now let's go ahead and rename the PC and join the domain at the same time.
+- To do this we right click the start menu and select system.
+- Once there, we scroll down until we find the option to Rename the PC (Advanced).
+- Now we can select "Change" and rename it to CLIENT1.
+- On the change the option from workgroup to domain and enter our domain which is mydomain.com.
+- Now we need to enter a user name and password that has permission to join the domain.
+- I am going to enter the admin account that I created before.
+- Then we can go ahead and restart.
+<img src="https://github.com/user-attachments/assets/b6d60a84-9c13-4220-bf92-77aa89e43d32" alt="" width="600" style="float: left; margin-right: 10px;">
 
+#
 
+- Let's go explore some things now that the client is up and running.
+- Lets log into the domain contoller using the admin account. 
+- Once we are logged in let's head back over tools and open DHCP.
+- If we go back to the scope we created and open address leases we can see that there is a lease from the client VM that we just created!
+- This is where all of the leases will show up when a client connects to the network.
+![Screenshot 2024-09-03 114531](https://github.com/user-attachments/assets/fc2f3148-f8d4-45f3-8d32-8eb4c0794153)
 
+#
+
+- Ok, now lets head over to "Active Directory Users and Computers."
+- Once there we can click on computers and see that our CLIENT1 is connected to the domain. 
+- Since this is connected to the domain we can use any of those accounts that we created prior to log into that computer.
+- From the domain controller we can also delete CLIENT1 and then none of those accounts would be able to log in anymore.
+<img src="https://github.com/user-attachments/assets/74d2b3da-31dc-4ff3-b65b-bc9d226d412a" alt="" width="600" style="float: left; margin-right: 10px;">
+
+#
+
+- Let's head back over to the Windows 10 VM and sign in using one of the users we created with the script. 
+- I entered my own name into the list so I am going to log in using that. 
+<img src="https://github.com/user-attachments/assets/7e3f1e2c-f33b-49f2-9b4c-cb243d78baba" alt="" width="600" style="float: left; margin-right: 10px;">
+
+#
+
+- Once we are logged in let's head over to the command line to verify everything.
+- We can enter the command - whoami and we see that we are logged into mydomain using the username jshargel!
+- Success!
+<img src="https://github.com/user-attachments/assets/127677e8-fb62-43bb-9b4a-0d686010e359" alt="" width="600" style="float: left; margin-right: 10px;">
 
 
 
