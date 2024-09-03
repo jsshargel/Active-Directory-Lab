@@ -10,6 +10,7 @@
 - Server 2019
 # Visualized Overview
 ![Screenshot 2024-09-03 120540](https://github.com/user-attachments/assets/3ebcccbf-7131-45c0-8549-0570320b5632)
+Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 # Configuration Steps
 - The first step is to download VirtualBox along with the extension pack.
   
