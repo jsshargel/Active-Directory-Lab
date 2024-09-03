@@ -1,10 +1,10 @@
 # Active-Directory-Lab
 - This tutorial outlines how to set up a lab running active directory.
 - I learned how to build this lab from Josh Madakor.
-- You can check out his github at https://github.com/joshmadakor1 or his youtube channel at https://www.youtube.com/c/JoshMadakor
+- You can check out his GitHub at https://github.com/joshmadakor1 or his YouTube channel at https://www.youtube.com/c/JoshMadakor.
 # Technologies Used
 - VirtualBox
-- Powershell
+- PowerShell
 # Operating Systems Used
 - Windows 10
 - Server 2019
@@ -17,7 +17,7 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 <img src="https://github.com/user-attachments/assets/7fc0fc73-0eb5-4858-a631-55b1c4cbee2d" alt="VirtualBox Download" width="600" style="float: left; margin-right: 10px;">
 
 # 
-- Next, we need to download a Windows 10 ISO and a Windows Server 2019 ISO
+- Next, we need to download a Windows 10 ISO and a Windows Server 2019 ISO.
 
 <img src="https://github.com/user-attachments/assets/c5679b4d-10c1-4a6f-9c4c-de364d661228" alt="Windows 10 ISO" width="600" style="float: left; margin-right: 10px;">
 
@@ -26,7 +26,7 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 <img src="https://github.com/user-attachments/assets/f656316e-bd33-4764-89f0-59756805c959" alt="Windows Server 2019 ISO" width="600" style="float: left; margin-right: 10px;">
 
 #
-- Next, we are going to set up a virtual machine. This will serve as our domain controller. 
+- Next, we will set up a virtual machine, which will serve as our domain controller.
 - I went ahead and set the machine to have 2GB of RAM, 4 processors, and enabled bidirectional drag and drop features. 
 - Since this is the domain controller, we need two NICs, so we also need to make sure to enable a second network adapter.
 - NIC 1 is going to be running NAT and is for the domain controller to access the internet through my home internet.
@@ -43,7 +43,7 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 
 #
 
-- Next, to create a smoother experience we are going to install guest additions. 
+- Next, to create a smoother experience, we will install guest additions. 
 
 <img src="https://github.com/user-attachments/assets/910dca2d-0499-49e6-8d3b-3b8155c36493" alt="Installing Guest Additions" width="600" style="float: left; margin-right: 10px;">
 
@@ -51,66 +51,66 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 
 # 
 - Next, we are going to set up IP addressing for the internal NIC.
-- We do not have to worry about other NIC because it will automatically get an IP adress from the home router.
+- We do not have to worry about other NIC because it will automatically get an IP address from the home router.
 - Let's head on over to network settings to identify the different network connections.
-- Below we can see that the first connection has an IP address that can be associated with a home network, so we will rename them accordingly.  
+- Below, we can see that the first connection has an IP address that can be associated with a home network, so we will rename them accordingly.  
 ![Screenshot 2024-08-28 114717](https://github.com/user-attachments/assets/65ec44fb-4126-4d6f-baf9-7fbf603f0e06)
 
 #
 - Now we can set up the IP addressing.
-- For the IP address we will use 172.16.0.1
-- For the Subnet mask we will use 255.255.255.0
-- For the Default gateway we will leave it blank because the domain controller itself will serve as the default gateway.
-- For the DNS server address we will use 127.0.0.1 which is a loopback address since the dns server will automatically be installed active directory is installed.  
+- For the IP address, we will use 172.16.0.1
+- For the Subnet Mask, we will use 255.255.255.0
+- We will leave the Default Gateway blank because the domain controller itself will serve as the default gateway.
+- For the DNS server address, we will use 127.0.0.1, which is a loopback address since the DNS server will automatically be installed when active directory is.  
 ![Screenshot 2024-08-29 114030](https://github.com/user-attachments/assets/69e7c4d8-c90c-4c5c-9723-0b959e3db011)
 
 #
-- Next, we are going to rename the PC to be something other than a random name.
+- Next, we will rename the PC to be something other than a random name.
 - We'll name it DC for domain controller and then restart the machine. 
 <img src="https://github.com/user-attachments/assets/6a6933ce-dd78-442e-bd6b-a8849bcc7eda" alt="Renaming PC" width="600" style="float: left; margin-right: 10px;">
 
 #
 
 - Next, we are going to install active directory domain services to add a domain. 
-- To do this we will head over to the dashboard and click on "Add roles and features"
-- The installagtion type is role-based or feature-based.
+- To do this, we will head over to the dashboard and click on "Add roles and features."
+- The installation type is role-based or feature-based.
 - Select the server we want to use.
-- Under server roles we will select "Active Directory Domain Services" and add the features.
-- Then we will continue passed Features, AD DS, and go ahead and Install.
+- Under server roles, we will select "Active Directory Domain Services" and add the features.
+- Then we will continue past Features, AD DS, and go ahead and install.
 <img src="https://github.com/user-attachments/assets/f3f9334e-125c-4ba9-965a-f8c17188658f" alt="" width="600" style="float: left; margin-right: 10px;">
 
 #
 
-- Now we need to create the domain from the sofware we just installed.
-- To do this we head over to the flag icon in the server manager.
-- Next, we want to click "Promote this server to a domain controller"
-- For the deployment configuration we want to select "Add a new forest" and then name the Root domain name. We will use mydomain.com
-- Now we will create a password for DSRM.
-- After this we will continue through the different options until we are able to install.
-- After it is finished installing the machine will automatically restart
+- Now we need to create the domain from the software we just installed.
+- To do this, we head over to the flag icon in the server manager.
+- Next, we want to click "Promote this server to a domain controller."
+- For the deployment configuration, select "Add a new forest" and then name the root domain name. We will use mydomain.com.
+- Now, we will create a password for DSRM.
+- After this, we will continue through the different options until we are able to install.
+- After it is finished installing, the machine will automatically restart.
   
 ![Screenshot 2024-08-29 121905](https://github.com/user-attachments/assets/d67f524a-a7a3-4683-ade6-8e7005772bd3)
 
 #
 
-- Next, we will login using the built in admin account.
+- Next, we will log in using the built-in admin account.
   
 <img src="https://github.com/user-attachments/assets/753aaa79-9c2a-4d17-b116-512b87f5f361" alt="" width="600" style="float: left; margin-right: 10px;">
 
 
 #
 
-- Once logged in we will create our own dedicated admin account instead of using the built in admin account.
-- To do this we will open the start menu and go to "Windows Administrative Tools and open "Active Directory Users and Computers."
-- Once open we can see our newly created domain. We right click mydomain.com and hover over "New" to create an Orgaizational Unit.
-- We will name it _ADMINS. Make sure to uncheck the option that says to protect container form accidental deletion because it will be annoying when trying to delete later.
+- Once logged in, we will create our own dedicated admin account instead of using the built-in admin account.
+- To do this, we will open the Start Menu, and go to "Windows Administrative Tools" and open "Active Directory Users and Computers."
+- Once open, we can see our newly created domain. We right-click mydomain.com and hover over "New" to create an Organizational Unit.
+- We will name it _ADMINS. Make sure to uncheck the option to protect the container from accidental deletion, as it will be annoying when trying to delete it later.
 <img src="https://github.com/user-attachments/assets/cea4450b-8740-4f13-8e1c-f6ffb2d5f2d3" alt="" width="600" style="float: left; margin-right: 10px;">
 
 #
 
-- Once created we can create a new user following the same steps but under the newley created _ADMINS organizational unit.
+- Once created, we can create a new user following the same steps but under the newly created _ADMINS organizational unit.
 - We can now set up our name and the user logon name. I am going to use a-jshargel
-- Next, we can create a password. Make sure to uncehck "user much change password at next logon" and also check "password never expires" for convenience and because this is just a lab environment. 
+- Next, we can create a password. Make sure to uncheck "user must change password at next logon" and check "password never expires" for convenience because this is just a lab environment. 
 <img src="https://github.com/user-attachments/assets/7994c23c-d047-4f2b-8b7e-db62b404b115" alt="" width="600" style="float: left; margin-right: 10px;">
 
 #
