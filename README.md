@@ -8,6 +8,8 @@
 - Network Services: DNS, DHCP, and NAT
 - Server Roles: Active Directory Domain Services and Remote Access Server
 - Operating Systems: Windows 10 and Windows Server 2019
+- # Skills and Lessons Learned
+- This lab taught me a ton of hands-on practical skills. I now have some familiarity with setting up and configuring Active Directory Domain Services. I learned how to set up a domain controller, manage user accounts, and configure network services like DNS and DHCP. It was awesome to gain a basic understanding of how networking works in a corporate environment.   
 # Visualized Overview
 ![Screenshot 2024-09-03 120540](https://github.com/user-attachments/assets/3ebcccbf-7131-45c0-8549-0570320b5632)
 Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
