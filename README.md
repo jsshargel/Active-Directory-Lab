@@ -1,13 +1,13 @@
 # Active-Directory-Lab
-- This tutorial outlines how to set up a lab running active directory.
+- The goal of this tutorial is to gain hands-on experience in setting up and managing Active Directory in a virtualized environment. During the tutorial we will explore many other important topics such as system administration, network configuration, server setup, domain controller configuration, and user account management.
 - I learned how to build this lab from Josh Madakor.
 - You can check out his GitHub at https://github.com/joshmadakor1 or his YouTube channel at https://www.youtube.com/c/JoshMadakor.
-# Technologies Used
-- VirtualBox
-- PowerShell
-# Operating Systems Used
-- Windows 10
-- Server 2019
+# Technologies and Tools Used
+- Virtualization: VirtualBox
+- Automation and Scripting: PowerShell
+- Network Services: DNS, DHCP, and NAT
+- Server Roles: Active Directory Domain Services and Remote Access Server
+- Operating Systems: Windows 10 and Windows Server 2019
 # Visualized Overview
 ![Screenshot 2024-09-03 120540](https://github.com/user-attachments/assets/3ebcccbf-7131-45c0-8549-0570320b5632)
 Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
