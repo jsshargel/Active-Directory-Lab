@@ -1,5 +1,5 @@
 # Active-Directory-Lab
-- The goal of this tutorial is to gain hands-on experience in setting up and managing Active Directory in a virtualized environment. During the tutorial we will explore many other important topics such as system administration, network configuration, server setup, domain controller configuration, and user account management.
+- The goal of this tutorial is to gain hands-on experience in setting up and managing Active Directory in a virtualized environment. During the tutorial, we will explore many other important topics such as system administration, network configuration, server setup, domain controller configuration, and user account management.
 - I learned how to build this lab from Josh Madakor.
 - You can check out his GitHub at https://github.com/joshmadakor1 or his YouTube channel at https://www.youtube.com/c/JoshMadakor.
 # Technologies and Tools Used
@@ -29,7 +29,7 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 
 #
 - Next, we will set up a virtual machine, which will serve as our domain controller.
-- I went ahead and set the machine to have 2GB of RAM, 4 processors, and enabled bidirectional drag and drop features. 
+- I went ahead and set the machine to have 2GB of RAM, 4 processors, and enabled bidirectional drag-and-drop features. 
 - Since this is the domain controller, we need two NICs, so we also need to make sure to enable a second network adapter.
 - NIC 1 is going to be running NAT and is for the domain controller to access the internet through my home internet.
 - NIC 2 is for an internal network and is used to create a closed network environment in which the domain controller can manage clients without exposure to the external internet.
@@ -68,7 +68,7 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 
 #
 - Next, we will rename the PC to be something other than a random name.
-- We'll name it DC for domain controller and then restart the machine. 
+- We'll name it DC for the domain controller and then restart the machine. 
 <img src="https://github.com/user-attachments/assets/6a6933ce-dd78-442e-bd6b-a8849bcc7eda" alt="Renaming PC" width="600" style="float: left; margin-right: 10px;">
 
 #
@@ -140,7 +140,7 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 - This process will be similar to when we installed active directory domain services.
 - We select the installation type, which is once again role or feature-based.
 - Next, we select the server.
-- After that we will select "Remote Access."
+- After that, we will select "Remote Access."
 - We will continue forward until we reach role services. Here, we will select routing and then add features. We can see that DirectAccess and VPN (RAS) have also been checked automatically.
 - Now, we will continue until we can install the role.
 <img src="https://github.com/user-attachments/assets/82a0f1e4-2ba8-4666-a72b-c72adc0ad46d" alt="" width="600" style="float: left; margin-right: 10px;">
@@ -195,7 +195,7 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 - Now, we can open the PowerShell script saved in the folder on our desktop. 
 - If we try to run the script as is, we get an error. This is a security feature, but we need to get around this.
 - To do that we enter the command - Set-ExecutionPolicy Unrestricted.
-- After this we will change directories to the AD_PS-Master folder using the cd command.
+- After this, we will change directories to the AD_PS-Master folder using the cd command.
 - Once there, we can search the content using the ls command, and we can see that the name.txt file is there.
 <img src="https://github.com/user-attachments/assets/251c0517-2203-4971-a2f6-47af6f882aab" alt="" width="600" style="float: left; margin-right: 10px;">
 
@@ -212,7 +212,7 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 - To do that we can head back over to Virtual Box and create a new VM.
 - Let's name it Client1 and select Windows 10 64 Bit.
 - I'm going to give it the same settings as the server, except I'll increase the RAM on this one to 4GB. 
-- Also, under network we need to select Internal Network.
+- Also, under network, we need to select Internal Network.
 <img src="https://github.com/user-attachments/assets/2f8e9bfa-c890-4ce2-accd-de8b9e8c9981" alt="" width="600" style="float: left; margin-right: 10px;">
 
 #
@@ -222,7 +222,7 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 - We also need to make sure to select Windows 10 Pro because the Home edition cannot join the domain.
 - Now we select custom install and go ahead and install.
 - Once it is finished installing, it will restart on its own.
-- Once we get to the option to select which type of an account this will be, we select a personal account.
+- Once we get to the option to select which type of account this will be, we select a personal account.
 - On the next page, we want to make sure to select the offline account and then limited experience. 
 - Let's set the username to "user" and skip over the password.
 - Let's skip over everything else.
@@ -252,7 +252,7 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 #
 
 - Let's explore some things now that the client is up and running.
-- Let's log into the domain contoller using the admin account. 
+- Let's log into the domain controller using the admin account. 
 - Once we are logged in, let's head over to the tools and open the DHCP.
 - If we go back to the scope we created and open “Address Leases,” we can see that there is a lease from the client VM that we just created!
 - This is where all the leases will appear when a client connects to the network.
@@ -269,7 +269,7 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 #
 
 - Let's head back over to the Windows 10 VM and sign in using one of the users we created with the script. 
-- I entered my own name into the list, so I am going to log in using that. 
+- I entered my name into the list, so I am going to log in using that. 
 <img src="https://github.com/user-attachments/assets/7e3f1e2c-f33b-49f2-9b4c-cb243d78baba" alt="" width="600" style="float: left; margin-right: 10px;">
 
 #
