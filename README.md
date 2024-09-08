@@ -1,5 +1,7 @@
 # Active-Directory-Lab
 - The goal of this tutorial is to gain hands-on experience in setting up and managing Active Directory in a virtualized environment. During the tutorial, we will explore many other important topics such as system administration, network configuration, server setup, domain controller configuration, and user account management.
+- I learned how to build this lab from Josh Madakor.
+- You can check out his GitHub at https://github.com/joshmadakor1 or his YouTube channel at https://www.youtube.com/c/JoshMadakor.
 # Technologies and Tools Used
 - Virtualization: VirtualBox
 - Automation and Scripting: PowerShell
@@ -277,10 +279,6 @@ Source: https://www.youtube.com/watch?v=MHsI8hJmggI&t=2049s
 - Success!
 <img src="https://github.com/user-attachments/assets/127677e8-fb62-43bb-9b4a-0d686010e359" alt="" width="600" style="float: left; margin-right: 10px;">
 
-#
-
-- I learned how to build this lab from Josh Madakor.
-- You can check out his GitHub at https://github.com/joshmadakor1 or his YouTube channel at https://www.youtube.com/c/JoshMadakor.
 
 
 
